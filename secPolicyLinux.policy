@@ -1,0 +1,14 @@
+/* For use with InvocationWithSecurityManager and .../extras/SneakyReflector. Look in the
+latter for a README file to jog fading memories.
+*/
+
+grant codeBase "file:/c/java/course/developintelligence/courselets/ReflectionAnnotations/bin" {
+  permission java.security.AllPermission;
+};
+
+grant codeBase "file:/c/java/course/developintelligence/courselets/SneakyReflector/bin/" {
+  // no permissions for this one
+  //permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+ //permission java.security.AllPermission;
+};
+
